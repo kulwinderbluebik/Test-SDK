@@ -5,7 +5,7 @@ import android.content.Context
 
 interface ToastInterface {
 
-    fun showLongToast(context: Context)
-    fun showShortToast(context: Context)
+    fun showLongToast(context: Context, toast: String)
+    fun showShortToast(context: Context, toast: String)
 
 }

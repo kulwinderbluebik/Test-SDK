@@ -10,7 +10,6 @@ class MainActivity : AppCompatActivity() {
 
     private var btnTest: Button? = null
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,8 +17,8 @@ class MainActivity : AppCompatActivity() {
         btnTest = findViewById(R.id.btnTest)
 
         btnTest?.setOnClickListener {
-            TestingToast.showLongToast(this)
+            TestingToast.showLongToast(this, "Testing Toast")
         }
     }
-    ///asddf--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--afdfs
+
 }

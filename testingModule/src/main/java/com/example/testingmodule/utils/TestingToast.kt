@@ -6,13 +6,13 @@ import android.widget.Toast
 
 object TestingToast : ToastInterface {
 
-    override fun showLongToast(context: Context) {
-        Toast.makeText(context, "Testing Long Toast", Toast.LENGTH_LONG).show()
+    override fun showLongToast(context: Context, toast: String) {
+        Toast.makeText(context, toast, Toast.LENGTH_LONG).show()
     }
 
 
-    override fun showShortToast(context: Context) {
-        Toast.makeText(context, "Testing Short Toast", Toast.LENGTH_SHORT).show()
+    override fun showShortToast(context: Context, toast: String) {
+        Toast.makeText(context, toast, Toast.LENGTH_SHORT).show()
     }
 
 }
